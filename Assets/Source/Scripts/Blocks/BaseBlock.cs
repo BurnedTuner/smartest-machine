@@ -6,8 +6,17 @@ public abstract class BaseBlock : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Bullet bullet))
         {
-            OnBulletCollision(bullet, collision.contacts[0].normal);
-            Debug.Log(collision.otherCollider.name);
+            Vector3 normal = new Vector3();
+            foreach(RaycastHit2D hit in Physics2D.CircleCastAll(collision.transform.position, 0.5f, collision.transform.right))
+            {
+                if(hit.collider == GetComponent<Collider2D>())
+                {
+                    normal = hit.normal;
+                    Debug.DrawRay(hit.point, hit.normal, Color.red, 5);
+                }
+            }
+
+            OnBulletCollision(bullet, normal);
         }
     }
 
