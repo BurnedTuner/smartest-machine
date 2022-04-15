@@ -11,9 +11,13 @@ public class Bullet : MonoBehaviour
 
     private float _currentSpeed;
     private Rigidbody2D _rigidbody;
+    
+    public int Power;
 
     private void Awake()
     {
+        Power = 0;
+
         _currentSpeed = _startSpeed;
         _rigidbody = GetComponent<Rigidbody2D>();
     }
