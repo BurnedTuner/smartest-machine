@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -11,8 +9,8 @@ public class Bullet : MonoBehaviour
 
     private float _currentSpeed;
     private Rigidbody2D _rigidbody;
-    
-    public int Power;
+
+    public int Power { get; private set; }
 
     private void Awake()
     {
@@ -29,6 +27,11 @@ public class Bullet : MonoBehaviour
         _currentSpeed = Mathf.Clamp(_currentSpeed, 0, _maxSpeed);
 
         _rigidbody.velocity = (Vector2)transform.right * _currentSpeed * Time.deltaTime;
+    }
+
+    public void AddPower()
+    {
+        Power += 1;
     }
 
     public void SetAngle(float zAngle)

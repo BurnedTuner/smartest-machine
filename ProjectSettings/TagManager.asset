@@ -44,8 +44,8 @@ TagManager:
   - name: Hole
     uniqueID: 2785402479
     locked: 0
-  - name: Player
-    uniqueID: 2752298947
+  - name: Bullet
+    uniqueID: 1471241993
     locked: 0
   - name: Blocks
     uniqueID: 1942051889
@@ -53,6 +53,9 @@ TagManager:
   - name: BlockParts
     uniqueID: 2883752641
     locked: 0
-  - name: Bullet
-    uniqueID: 1471241993
+  - name: Player
+    uniqueID: 2752298947
+    locked: 0
+  - name: UI
+    uniqueID: 664159311
     locked: 0

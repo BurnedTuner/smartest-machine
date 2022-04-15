@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveBlock : BaseBlock
+public class MoveBlock : Block
 {
     [SerializeField] private MoveableObject _moveableObject;
 
