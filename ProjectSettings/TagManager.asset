@@ -53,6 +53,12 @@ TagManager:
   - name: BlockParts
     uniqueID: 2883752641
     locked: 0
+  - name: Gameplay UI
+    uniqueID: 2321283089
+    locked: 0
+  - name: Shatter
+    uniqueID: 733582103
+    locked: 0
   - name: Player
     uniqueID: 2752298947
     locked: 0
