@@ -123,12 +123,13 @@ GameObject:
   m_Component:
   - component: {fileID: 6076474194456437232}
   - component: {fileID: 6076474194456437233}
+  - component: {fileID: 601691430}
   - component: {fileID: 6076474194456437247}
   - component: {fileID: 6076474194456437244}
   - component: {fileID: 6076474194456437235}
-  - component: {fileID: 601691430}
+  - component: {fileID: 7904087478250670591}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,6 +201,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &601691430
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6076474194456437242}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 98267f2b53c8d1745b1115d9ab7cf211, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &6076474194456437247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -254,22 +274,18 @@ MonoBehaviour:
   _bulletTemplate: {fileID: 5257772319657833833, guid: ac0af8fc5e54419428197c993f45f54a, type: 3}
   _gunContainer: {fileID: 1895830768}
   _shootOffsetRadius: 1.5
---- !u!95 &601691430
-Animator:
-  serializedVersion: 3
+--- !u!114 &7904087478250670591
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6076474194456437242}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 98267f2b53c8d1745b1115d9ab7cf211, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626325cffba16bb4fba229954ef0624b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _inputRoot: {fileID: 6076474194456437244}
+  _animator: {fileID: 601691430}
+  _gun: {fileID: 1895830767}
