@@ -13,7 +13,11 @@ public class InputRoot : MonoBehaviour
 
     private void Update()
     {
+        Vector2 worldMousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);
+
         if (Input.GetMouseButtonDown(0))
-            _gun.Shoot(_camera.ScreenToWorldPoint(Input.mousePosition));
+            _gun.Shoot(worldMousePosition);
+
+        _gun.Rotate(worldMousePosition);
     }
 }
