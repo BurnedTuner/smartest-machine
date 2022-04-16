@@ -19,6 +19,5 @@ public class DirectionBlock : Block
     {
         bullet.transform.position = _directionPoint.position;
         bullet.SetAngle(_newAngle);
-        bullet.AddPower();
     }
 }

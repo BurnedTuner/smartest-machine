@@ -11,11 +11,8 @@ public class TargetBlock : Block
 
     protected override void OnBulletCollision(Bullet bullet, Vector3 normal)
     {
-        if (bullet.Power >= _requiredPower)
-        {
-            _spriteRenderer.color = _hitColor;
-            Activated?.Invoke(this);
-        }
+        _spriteRenderer.color = _hitColor;
+        Activated?.Invoke(this);
 
         bullet.Hit();
     }

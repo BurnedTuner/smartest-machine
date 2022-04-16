@@ -10,12 +10,8 @@ public class Bullet : MonoBehaviour
     private float _currentSpeed;
     private Rigidbody2D _rigidbody;
 
-    public int Power { get; private set; }
-
     private void Awake()
     {
-        Power = 0;
-
         _currentSpeed = _startSpeed;
         _rigidbody = GetComponent<Rigidbody2D>();
     }
@@ -28,12 +24,6 @@ public class Bullet : MonoBehaviour
 
         _rigidbody.velocity = (Vector2)transform.right * _currentSpeed * Time.deltaTime;
     }
-
-    public void AddPower()
-    {
-        Power += 1;
-    }
-
     public void SetAngle(float zAngle)
     {
         transform.rotation = Quaternion.Euler(0, 0, zAngle);
