@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        _rigidbody.velocity = (Vector2)transform.right * _speed * Time.deltaTime;
+        _rigidbody.velocity = (Vector2)transform.right * _speed;
     }
     public void SetAngle(float zAngle)
     {

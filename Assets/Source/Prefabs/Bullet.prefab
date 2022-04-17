@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4152598612886477769}
   - component: {fileID: 7395658181948802656}
   - component: {fileID: 5257772319657833833}
-  - component: {fileID: 5380237716395245656}
+  - component: {fileID: 299502097474442189}
   m_Layer: 6
   m_Name: Bullet
   m_TagString: Untagged
@@ -67,9 +67,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fd8f34593300840b9123d036d03d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 7500
---- !u!60 &5380237716395245656
-PolygonCollider2D:
+  _speed: 25
+--- !u!61 &299502097474442189
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91,16 +91,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.089806, y: -0.09157729}
-      - {x: -0.47379923, y: 0.38822138}
-      - {x: -0.5116271, y: -0.13273329}
-      - {x: -0.04085648, y: -0.5378608}
-      - {x: 0.048063383, y: -0.07962379}
-      - {x: 0.47227302, y: -0.3373149}
-      - {x: 0.4788932, y: -0.18177967}
-      - {x: -0.017578423, y: 0.2455434}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &2621223168569066598
 GameObject:
   m_ObjectHideFlags: 0
