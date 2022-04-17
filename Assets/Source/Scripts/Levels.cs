@@ -15,7 +15,8 @@ public class Levels
             "Level3",
             "Level4",
             "Level5",
-            "Level6"
+            "Level6",
+            "Level7"
         };
 
         CurrentLevel = PlayerPrefs.GetString(CurrentLevelKey, _levels[0]);
